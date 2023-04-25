@@ -11,7 +11,7 @@ create a folder "db" in "Desktop" folder and copy an absolute path to it
 ``mongod --dbpath="/Users/username/Desktop/db"``
 
 3. run
-backend ``cd backend && npm start:dev``
+backend ``cd backend && npm run start:dev``
 frontend (in a new terminal) ``cd frontend && npm start``
 
 4. open http://localhost:4200
