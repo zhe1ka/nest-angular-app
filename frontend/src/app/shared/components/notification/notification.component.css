@@ -1,0 +1,14 @@
+.ui-notification {
+  max-width: 650px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+}
+
+.ui-notification.red {
+  border: 1px solid #a10202;
+  background: #ee0505;
+  color: #fff;
+}

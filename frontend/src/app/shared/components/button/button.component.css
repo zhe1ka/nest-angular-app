@@ -1,0 +1,35 @@
+.ui-button {
+  padding: 5px 10px;
+  margin: 0 20px 10px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: background-color .3s;
+}
+
+.ui-button.primary {
+  border: 1px solid #1800c0;
+  background-color: #4431d0;
+  color: #fff;
+}
+
+.ui-button.primary:hover {
+  background-color: #1800c0;
+}
+
+.ui-button.green {
+  border: 1px solid #0f9a04;
+  background-color: #14bd06;
+  color: #fff;
+}
+
+.ui-button.green:hover {
+  background-color: #0f9a04;
+}
+
+.ui-button[disabled],
+.ui-button[disabled]:hover {
+  background: #ccc;
+  border: 1px solid #999;
+  cursor: auto;
+}

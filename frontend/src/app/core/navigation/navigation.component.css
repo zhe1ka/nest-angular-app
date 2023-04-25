@@ -1,0 +1,21 @@
+.nav {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 0;
+}
+
+.nav .nav_item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav_item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav .nav_item a.active {
+  color: #0f9a04;
+}

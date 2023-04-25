@@ -1,0 +1,35 @@
+<ui-container>
+  <ui-avatar [src]="avatar" />
+
+  <div class="card-user__info-fields">
+    <ui-info-field
+      label="Name"
+      [title]="name"
+    />
+
+    <ui-info-field
+      label="Age"
+      [title]="age"
+    />
+
+    <ui-info-field
+      label="Gender"
+      [title]="gender"
+    />
+
+    <ui-info-field
+      label="Email"
+      [title]="email"
+    />
+
+    <ui-info-field
+      label="Location"
+      [title]="location"
+    />
+
+    <ui-info-field
+      label="Weather"
+      [title]="formWeather()"
+    />
+  </div>
+</ui-container>

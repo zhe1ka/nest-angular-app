@@ -1,0 +1,16 @@
+<ui-notification *ngIf="isError">
+  Something went wrong!
+</ui-notification>
+
+<ng-container *ngFor="let user of users">
+  <card-user
+    [avatar]="user.avatar"
+    [age]="user.age"
+    [phone]="user.phone"
+    [name]="user.name"
+    [gender]="user.gender"
+    [email]="user.email"
+    [location]="user.location"
+    [weather]="user.weather"
+  />
+</ng-container>

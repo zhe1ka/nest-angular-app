@@ -1,0 +1,32 @@
+<ui-notification *ngIf="isError">
+  Something went wrong!
+</ui-notification>
+
+<ng-container *ngFor="let user of users">
+  <card-user
+    [avatar]="user.avatar"
+    [age]="user.age"
+    [phone]="user.phone"
+    [name]="user.name"
+    [gender]="user.gender"
+    [email]="user.email"
+    [location]="user.location"
+    [weather]="user.weather"
+  />
+
+  <div class="buttons">
+    <ui-button
+      (handleClick)="getRandomUser()"
+    >
+      Refresh
+    </ui-button>
+
+    <ui-button
+      (handleClick)="save(user)"
+      [disabled]="isSaved(user.email)"
+      color="green"
+    >
+      Save
+    </ui-button>
+  </div>
+</ng-container>

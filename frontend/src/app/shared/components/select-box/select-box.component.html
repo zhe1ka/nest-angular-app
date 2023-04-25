@@ -1,0 +1,5 @@
+<select class="ui-select-box" (change)="onChange($event)">
+  <ng-container *ngFor="let option of options; trackBy: getItemIndex">
+    <option [value]="option.value">{{option.title}}</option>
+  </ng-container>
+</select>

@@ -1,0 +1,33 @@
+<ui-notification *ngIf="isError">
+  Something went wrong!
+</ui-notification>
+
+<ui-container [noBorder]="true">
+  <ui-select-box
+    (handleChange)="changeCounter($event)"
+    [options]="counterOptions"
+  />
+</ui-container>
+
+<ng-container *ngFor="let user of users">
+  <card-user
+    [avatar]="user.avatar"
+    [age]="user.age"
+    [phone]="user.phone"
+    [name]="user.name"
+    [gender]="user.gender"
+    [email]="user.email"
+    [location]="user.location"
+    [weather]="user.weather"
+  />
+
+  <ui-container [noBorder]="true">
+    <ui-button
+      (handleClick)="save(user)"
+      [disabled]="isSaved(user.email)"
+      color="green"
+    >
+      Save
+    </ui-button>
+  </ui-container>
+</ng-container>
