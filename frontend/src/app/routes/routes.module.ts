@@ -26,7 +26,7 @@ const publicRoutes: Routes = [
   },
 ];
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: PublicComponent,

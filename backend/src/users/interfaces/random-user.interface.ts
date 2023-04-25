@@ -5,7 +5,7 @@ export interface IRandomUser {
   dob: {
     data: string;
     age: number;
-  }
+  };
   email: string;
   gender: string;
   id: {

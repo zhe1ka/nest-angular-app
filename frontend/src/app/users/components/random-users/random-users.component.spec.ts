@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { RandomUsersComponent } from './random-users.component';
+import { SharedModule } from '@shared/shared.module';
 
 describe('RandomUsersComponent', () => {
   let component: RandomUsersComponent;
@@ -8,7 +10,8 @@ describe('RandomUsersComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RandomUsersComponent ]
+      declarations: [ RandomUsersComponent ],
+      imports: [ HttpClientTestingModule, SharedModule ]
     })
     .compileComponents();
 
