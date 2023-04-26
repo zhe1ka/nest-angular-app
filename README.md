@@ -24,3 +24,12 @@ frontend (in a new terminal) ``cd frontend && npm start``
 5. I didn't add the icons as images but the logic is done which detects the correct icon.
 6. Regarding the bonus point "Update current temperature periodically (every 5 minutes)." how I'd implement it:
 in the result of the request to the weather API there is a list of temperatures for the next 7 days, I'd save it in the db. Then in Cron-Job I'll handle this info.
+
+**List of possible improvements:**
+1. Makes sense to add CORS and CSP rules.
+2. Add Rate limits especially since we trigger third-party APIs.
+3. Improve appearance: add some shadows, adjust button "save", make better margins; add "loader" while data is being loaded.
+4. Implement lazy loading for saved details.
+5. Write unit tests for at least "shared" components.
+6. Split and move mongo URI to config file.
+7. Makes sense to add some validations, for example, for "email".
